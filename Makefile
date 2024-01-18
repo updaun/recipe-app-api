@@ -15,3 +15,6 @@ test:
 
 flake8:
 	docker-compose run --rm app sh -c "flake8"
+
+superuser:
+	docker-compose run --rm app sh -c "python manage.py createsuperuser"
